@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sushi Delivery</title>
+    <script
+      src="https://kit.fontawesome.com/661ac17a3d.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -34,28 +38,25 @@
       </div>
     </div>
     <div class="info">
-      <h2>Start ordering today!</h2>
+      <h2>START ORDERING TODAY!</h2>
       <p>Here is how you can earn rewards in just three steps</p>
       <div class="steps">
         <div class="step-1">
-          <h3>Create a free account</h3>
+          <h3>CREATE A FREE ACCOUNT</h3>
           <p>
             To get started, join now to access premium delivery features with
             the highest quality sushi.
           </p>
         </div>
         <div class="step-2">
-          <h3>
-            Browse through the hundreds of restaurants and select from their
-            menu
-          </h3>
+          <h3>BROWSE AND SELECT</h3>
           <p>
             It's that easy! We will handle it from there while ensuring the
             outstanding service every customer expects.
           </p>
         </div>
         <div class="step-3">
-          <h3>Sit back and relax</h3>
+          <h3>SIT BACK AND RELAX</h3>
           <p>
             As you enjoy your meal, you will accumulate Sushi Points that will
             go towards your next meal
@@ -64,21 +65,51 @@
       </div>
     </div>
     <div class="rewards">
-      <h3>Sushi Points</h3>
-      <ul>
-        <li>25</li>
-        <li>50</li>
-        <li>100</li>
-        <li>250</li>
-        <li>500</li>
-      </ul>
-      <div class="rewards-selection">DISPLAY WHAT REWARDS GO HERE</div>
+      <h3>SUSHI POINTS</h3>
+      <div class="points">
+        <div class="point 25 focused">25<i class="fa-solid fa-star"></i></div>
+        <div class="point 50 unfocused">50<i class="fa-solid fa-star"></i></div>
+        <div class="point 100 unfocused">
+          100<i class="fa-solid fa-star"></i>
+        </div>
+        <div class="point 250 unfocused">
+          250<i class="fa-solid fa-star"></i>
+        </div>
+        <div class="point 500 unfocused">
+          500<i class="fa-solid fa-star"></i>
+        </div>
+      </div>
+
+      <div class="rewards-selection">
+        <div class="option25 show option">
+          <img src="./img/dish1.png" alt="" />
+          <p>Pork Lunch Special</p>
+        </div>
+        <div class="option50 noshow option">
+          <img src="./img/dish2.png" alt="" />
+          <img src="./img/dish3.png" alt="" />
+          <img src="./img/dish4.png" alt="" />
+          <p>Spicy Salmon, Salmon Lovers, or CrabAvo</p>
+        </div>
+        <div class="option100 noshow option">
+          <img src="./img/dish5.png" alt="" />
+          <p>Salmon Nigiri Special</p>
+        </div>
+        <div class="option250 noshow option">
+          <img src="./img/dish6.png" alt="" />
+          <p>New Zealand Oysters</p>
+        </div>
+        <div class="option500 noshow option">
+          <img src="./img/dish7.png" alt="" />
+          <p>Salmon Sampler Combo</p>
+        </div>
+      </div>
     </div>
     <div class="content">
-      <h3>We are different</h3>
+      <h3 class="content-c3">WE ARE DIFFERENT</h3>
       <div>
         <div class="content-1">
-          <h4>We are quick!</h4>
+          <h4 class="content-c4">WE ARE QUICK!</h4>
           <p>
             While you might come to expect delays from other services, we
             understand that sushi is time sensitive. We know that it is best
@@ -89,7 +120,7 @@
           </p>
         </div>
         <div class="content-2">
-          <h4>Our services are cheap!</h4>
+          <h4>OUR SERVICES ARE CHEAP</h4>
           <p>
             It is well known that sushi can often be expensive. However, that
             does not mean the delivery has to be. We employ many drivers and
@@ -98,7 +129,7 @@
           </p>
         </div>
         <div class="content-3">
-          <h4>It's FREE!</h4>
+          <h4>IT'S FREE!</h4>
           <p>
             With us, not only can you indulge in the best tasting, local
             restaurants, you can earn rewards while doing so. Many restaurants
@@ -108,7 +139,6 @@
         </div>
       </div>
     </div>
-
     <div class="qna">
       <div class="qna-left">
         <h4>Questions or concerns?</h4>
@@ -118,5 +148,6 @@
         </p>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
