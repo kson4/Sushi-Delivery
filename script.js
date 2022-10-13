@@ -3,15 +3,12 @@ let currentShowed = document.querySelector(".show");
 const points = document.querySelectorAll(".point");
 points.forEach((point) => {
   point.addEventListener("mouseover", () => {
-    console.log("FOCUSED");
     point.classList.add("focused");
-    console.log(point);
   });
   point.addEventListener("mouseout", () => {
     console.log(point.classList);
     if (point.classList.contains("unfocused")) {
       point.classList.remove("focused");
-      console.log(point);
     }
   });
   point.addEventListener("click", () => {
@@ -21,7 +18,6 @@ points.forEach((point) => {
       point.classList.remove("unfocused");
       point.classList.add("focused");
       currentFocused = point;
-      console.log(point);
       if (point.classList.contains("25")) {
         currentShowed.classList.add("noshow");
         currentShowed = document.querySelector(".option25");

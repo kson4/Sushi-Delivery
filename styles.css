@@ -8,11 +8,14 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1.5% 0;
+  padding: 25px 0;
   background-color: #DD5353;
   border: 1px solid #DD5353;
   color: #fff;
   font-size: 1.25em;
+  position: fixed;
+  height: 150px;
+  z-index: 2;
 }
 .navbar-left, .navbar-right {
   display: flex;
@@ -25,7 +28,13 @@
   background-color: #B73E3E;
   border: none;
   color: #fff;
-  
+  position: fixed;
+  width: 100%;
+  top: 150px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
 }
 ul {
   display: flex;
@@ -40,20 +49,25 @@ li {
   /* text-align: center; */
 }
 h2, h3 {
-  color: #B73E3E;
+  /* color: #B73E3E; */
+  color: white;
 }
 .hero {
   width: 100%;
-  height: 65vh;
+  /* height: 90vh; */
+  height: 972px;
   bottom: -100%;
   background-image: url(./img/hero.jpg);
-  background-position: 0 -150px;
   background-size: cover;
-  color: rgba(232, 230, 227, 0.87);;
+  color: rgba(232, 230, 227, 0.87);
+  min-height: 90vh;
+  background-attachment: fixed;
+  background-position: -175px -50px;
+  background-repeat: no-repeat;
 }
 .hero-text {
   position: relative;
-  top: 25%;
+  top: 30vh;
   left: 15%;
   font-size: 1.5em;
 }
@@ -68,28 +82,40 @@ button {
   width: 7rem;
   height: 2rem;
   border-radius: 8px;
-  background-color: #DBC8AC;
-  color: black;
+  background-color: #2C394B;
+  color: white;
   border: 2px solid white;
 }
 
 .info {
-  padding-top: 5%;
+  padding: 10% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 1.5em;
-  padding-bottom: 5%;
-  background-color: #DBC8AC;
+  /* background-color: #DBC8AC; */
+  background-color: #413F42;
 }
-.info > h2 {
-  margin-bottom: 1%;
-  font-size: 1.75em;
+.fa-1, .fa-2, .fa-3 {
+  color: white;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
 }
-.info > p {
+.info-top-text {
+  font-size: 1.25em;
   margin-bottom: 3.5%;
+}
+.info-top-text > h2 {
+  margin-bottom: 1%;
+}
+.info-top-text > p {
+  color: #fff;
 }
 .steps {
   display: flex;
@@ -105,13 +131,18 @@ button {
   border: 1px solid #DD5353;;
   border-radius: 10px;
   padding: 3% 1%;
-  background-color: #EDDBC0;
+  background-color: #334756;
+  color: white;
+}
+.steps > div > img {
+  padding-top: 50px;
 }
 .steps > div > h3 {
   padding-bottom: 10%;
 }
 
 .rewards {
+  max-height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,10 +151,13 @@ button {
   gap: 50px;
   font-size: 2em;
   padding: 5% 0;
-  background-color: #EDDBC0;
+  background-color: #7F8487;
+  color: #fff;
 }
 .points {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 100px;
   font-size: 1.5em;
 }
@@ -132,7 +166,11 @@ button {
   height: 125px;
   display: flex;
   justify-content: center;
+  gap: 10px;
   align-items: center;
+}
+.rewards-selection {
+  transition: 0.2s;
 }
 .focused {
   border-bottom: 5px solid black;
@@ -148,7 +186,8 @@ button {
 }
 
 .content {
-  height: 45vh;
+  /* height: 70vh; */
+  height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,8 +195,10 @@ button {
   font-size: 1.5em;
   padding: 3% 0;
   background-image: url("./img/sushi-chef.jpg");
-  background-position: 0 -780px;
+  background-position: 0 -300px;
   background-size: cover;
+  background-repeat: no-repeat;
+  gap: 100px;
 }
 .content-c3 {
   font-size: 2em;
@@ -169,10 +210,13 @@ button {
   justify-content: center;
   align-items: center;
   gap: 80px;
+  margin: 0 5%;
+  /* background-color: #000; */
 }
 .content > div > div {
   width: 27.5%;
-  height: 20vh;
+  height: 45vh;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,13 +224,44 @@ button {
   text-align: center;
   font-size: 1.25em;
   color: white;
+  padding: 0 2%;
+  background-color: #413F42;
+  border-radius: 30px;
 }
 .content > div > div > h4 {
   margin-bottom: 2.5%;
 }
 
 .qna {
-  font-size: 1.25em;
-  margin-left: 25%;
+  font-size: 1.5em;
+  padding: 10% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: black; */
   color: white;
+  height: 100px;
+  background-color: #DD5353;
+  border: 1px solid #DD5353;
+}
+.qna-left > h4 {
+  margin: 2.5% 0;
+}
+
+.footer {
+  background-color: #B73E3E;
+  padding: 2.5% 0;
+  color: white;
+  font-size: 1.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  max-height: 5vh;
+}
+.footer > div {
+  max-height: 2.5%;
+}
+.footer > div:hover {
+  border-bottom: 1px solid white;
 }
