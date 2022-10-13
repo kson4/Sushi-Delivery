@@ -1,4 +1,8 @@
-# Sushi-Delivery
+# View the project here:
+
+https://kson4.github.io/Sushi-Delivery/
+
+# Photo Credits
 
 Photo by Rajesh TP: https://www.pexels.com/photo/sushi-dish-2098134/
 
